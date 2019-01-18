@@ -5,6 +5,7 @@ import Nav from './components/Nav/Nav.js';
 import Container from './components/Grid/Container.js';
 import Search from './pages/Search/Search';
 import Saved from './pages/Saved/Saved';
+import Home from './pages/Home/Home';
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
         <div className='App'>
           <Nav />
           <Container>
-            {/* <Route exact path='/' component={Home}/> */}
+            <Route exact path='/' component={Home} />
             <Route exact path='/search' component={Search} />
             <Route exact path='/saved' component={Saved} />
           </Container>

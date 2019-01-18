@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Col = ({ size, children }) => (
+const Col = ({ size, children }) => (
   <div
     className={size
       .split(' ')
@@ -10,3 +10,4 @@ export const Col = ({ size, children }) => (
     {children}
   </div>
 );
+export default Col;

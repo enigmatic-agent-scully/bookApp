@@ -30,13 +30,14 @@ export default class Saved extends Component {
     e.preventDefault();
     console.log(e.target.getAttribute('value'));
     API.deleteBook(e.target.getAttribute('value'));
+    this.loadBooks();
   };
 
   render() {
     return (
       <div id='savedPage'>
         <Container>
-          <Header />
+          <Header header='Your Saved Books' />
           {this.state.books.map(bookObj => (
             <CardWrapper key={bookObj.googleId}>
               <CardImg

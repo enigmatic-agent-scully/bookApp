@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import SearchForm from '../../components/SearchForm/SearchForm';
+import Header from './../../components/Header/Header';
 import Container from './../../components/Grid/Container';
 import CardWrapper from './../../components/BookCard/CardWrapper';
 import CardStackedWrapper from './../../components/BookCard/CardStackedWrapper';
@@ -110,6 +111,7 @@ export default class Search extends Component {
     return (
       <div id='searchPage'>
         <Container>
+          <Header header='Search the GoogleBooks API' />
           <SearchForm
             search={this.state.search}
             handleInputChange={this.handleInputChange}
