@@ -14,7 +14,7 @@ const key = process.env.REACT_APP_GOOGLE_API_KEY;
 
 export default class Search extends Component {
   state = {
-    search: 'practical magic',
+    search: '',
     resultsDisplay: [],
     bookToAdd: {}
   };
